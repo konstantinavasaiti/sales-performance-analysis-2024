@@ -1,1 +1,41 @@
+# Executive Summary — Sales Performance Analysis 2024
 
+**Prepared by:** Κωνσταντίνα Βασαϊτη
+**Date:** July 2026
+**Status:** Phase 2 Complete — EDA & KPIs
+
+---
+
+## Key Findings
+
+1. **Total Net Sales reached €1.896.883** across 1.500 orders from 100 active customers,
+with an Average Order Value of €1.264.
+
+2. **Laptops is the top-performing category** accounting for €812.705 (42,8% of total revenue),
+followed by Phones (€561.612) and Monitors (€451.765). Accessories remain significantly lower at €70.799.
+
+3. **June and October were peak months** with €202.622 and €186.762 respectively.
+March and September recorded the lowest sales, suggesting seasonal patterns worth monitoring.
+
+4. **Profit Margin stands at 20,7%** (Total Profit: €392.009), remaining consistent
+across months with no significant outliers.
+
+5. **Top customer (C089) generated €38.956** — nearly double the average revenue per customer (€18.968),
+indicating high dependency on a small number of accounts.
+
+6. **Heraklion and Athens lead regional performance** with €455.643 and €449.530 respectively.
+Patra recorded the lowest revenue at €285.356, representing a potential growth opportunity.
+
+7. **Product P003 is the top-selling product** with €215.892 in Net Sales and 259 units sold.
+
+---
+
+## Data Quality & Corrections
+
+8. **10 records had missing Category values** — corrected via a validated join with DimProducts.
+All mappings were verified as unambiguous before applying the fix.
+
+9. **8 records were identified as Customer Returns** with incorrect sign in NetSales and Cost fields
+(exported as positive due to an ERP extraction error). Following confirmation from the
+Accounting Department and CFO approval, the sign was corrected. Records were retained in the dataset.
+No rows were deleted at any stage of the analysis.
